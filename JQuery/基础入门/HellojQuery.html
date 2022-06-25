@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+    //表示页面加载完成之后,相当window.onload=function(){}
+      $(function (){
+        var btnobj=$("#btnId");
+        btnobj.click(function (){
+          alert("jQuery的单击事件");
+        });
+    });
+
+  </script>
+
+
+
+</head>
+<body>
+    <button id="btnId">HellojQuery</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function onclickFun(){
+      var usernameobj = document.getElementById('username');
+      //[object HTMLInputElement]就是dom对象
+      alert(usernameobj.value);
+      var usernameText=usernameobj.value;
+
+      var patt=/^\w{5,12}$/;
+      if (patt.test(usernameText)){
+        alert('用户名合法!');
+      }else
+      {
+        alert('用户名不合法！');
+      }
+
+
+    }
+
+  </script>
+
+
+
+
+
+</head>
+<body>
+    用户名:<input type="text" id="username">
+    <button onclick="onclickFun()">校验</button>
+</body>
+</html>

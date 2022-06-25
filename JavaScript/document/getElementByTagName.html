@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+  <script>
+    function checkAll(){
+      /**
+       * document.getElementsByTagName('input');是按照指定标签名来进行查询返回集合
+       * 这个集合操作跟数据一样
+       * 集合都是dom对象
+       * 集合中元素顺序 是他们在html页面中从上到下的顺序
+       */
+      var inputs=document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].checked=true;
+      }
+    }
+
+    function checkNo() {
+      var inputs=document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].checked=false;
+      }
+    }
+
+    function checkReverse() {
+      var inputs=document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].checked=!inputs[i];
+      }
+    }
+
+
+
+
+  </script>
+
+
+</head>
+<body>
+      兴趣爱好:
+      <input type="checkbox" name="hobby" value="cpp">C++
+      <input type="checkbox" name="hobby" value="java">java
+      <input type="checkbox" name="hobby" value="JavaScript">JavaScript
+      <input type="checkbox" name="hobby" value="python">python
+      <br>
+      <button onclick="checkAll()">全选</button>
+      <button onclick="checkNo()">全不选</button>
+      <button onclick="checkReverse()">反选</button>
+
+
+
+
+
+</body>
+</html>

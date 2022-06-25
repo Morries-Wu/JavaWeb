@@ -1,0 +1,16 @@
+$.ajax({
+    url:http://localhost:8080/JAVAWeb/ajaxservlet,
+    date:"action=jqueryajax",
+    type:"post",
+    sucess:function(){alert("来了")},
+    datetype:"json"
+
+});
+
+
+$.get("http://localhost:8080/Javaweb/ajaxservlet","action=ajaxGet",function(){},"json");
+
+
+$.post(url,data,callback,datatype);
+
+$.getJSON(url,data,callback);

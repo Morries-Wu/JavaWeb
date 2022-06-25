@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        /**
+         * 对象定义
+         * var 变量名=new Object(); 对象实例
+         * 变量名.属性名=值; 定义了一个属性
+         * 变量名.函数名=function(){}     定义了一个函数
+         */
+
+        var obj=new Object();
+        obj.name="Morries_Wu";
+        obj.age=18;
+        obj.fun=function (){
+            alert("姓名:"+this.name+",年龄:"+this.age);
+        }
+
+        /**
+         * 对象访问
+         * 变量名.属性/函数名()
+         */
+        alert(obj.fun());
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

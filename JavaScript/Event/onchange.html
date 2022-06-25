@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <script>
+    function onchangeFun(){
+      alert('女神发生了改变');
+    }
+
+    window.onload=function (){
+      var selobj = document.getElementById("sel");
+      selobj.onchange=function (){
+        alert("男神发生了改变")
+      }
+
+    }
+
+
+
+
+  </script>
+
+</head>
+<body>
+    请选择你心中的女神:
+    <!--静态注册onchange事件-->
+    <select onchange="onchangeFun()">
+      <option>--女神--</option>
+      <option>--芳芳--</option>
+      <option>--佳佳--</option>
+      <option>--茗茗--</option>
+    </select>
+    <br>
+
+    请选择你心中的男神:
+    <!--动态注册onchange事件-->
+    <select id="sel">
+      <option>--男神--</option>
+      <option>--曹操--</option>
+      <option>--关公--</option>
+      <option>--春哥--</option>
+    </select>
+
+
+
+
+</body>
+</html>
